@@ -74,11 +74,11 @@ After=network.target
 [Service]
 Type=simple
 User=myuser
-WorkingDirectory=/home/myuser/parsing_mail
-ExecStart=/home/myuser/parsing_mail/.venv/bin/python perplexity_gmail_bot.py
+WorkingDirectory=/opt/parser_gmail
+ExecStart=/opt/parser_gmail/.venv/bin/python perplexity_gmail_bot.py
 Restart=always
 RestartSec=10
-EnvironmentFile=/home/myuser/parsing_mail/.env
+EnvironmentFile=/opt/parser_gmail/.env
 
 [Install]
 WantedBy=multi-user.target
