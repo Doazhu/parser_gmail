@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/Users/doazhu/Documents/parsing_mail/.venv/bin/pip install:*)"
+    ]
+  }
+}
